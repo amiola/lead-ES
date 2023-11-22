@@ -1,0 +1,113 @@
+body{
+    background: url('img/marco-zero.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%, cover;
+    color: #0c2d40;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form, .texto{
+    width: 40%;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 1.5rem;
+}
+.head, .head2{
+    width: 100%;
+    border-radius: 1.5rem 1.5rem 0  0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0;
+}
+.head{
+    background: rgba(255, 255, 255, 0.65);
+}
+.img{
+    width: 6rem;
+    margin-left: 5rem;
+}
+.img img{
+    width: 100%;
+}
+h1{
+    text-align: center;
+    font-weight: 500;
+    font-family: 'Roboto Condensed', sans-serif;
+    flex: 3 1 10rem;
+    margin-left: -4rem;
+}
+input, textarea, select{
+    padding: 0.2rem;
+    margin: 0.7rem 0;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid lightgray;
+    border-radius: 0.2rem;
+    flex: 1 1 50%;
+}
+
+.campos{
+    padding: 2rem 5rem;
+}
+select{
+    width: 50%;
+}
+label{
+    font-size: 1.3rem;
+    font-weight: 500;
+    flex: 1 1 50%;
+}
+.desc{
+    flex: 1 1 50%;
+    display: flex;
+    align-items: start;
+}
+
+.campo{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.submit{
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+input[type='submit']{
+    background: #0176D3;
+    border: none;
+    border-radius: 0.5rem;
+    color: white;
+    padding: 0.5rem 1rem;
+    margin: 0;
+}
+
+input[type='submit']:hover{
+    cursor: pointer;
+    /* transform: scale(1.02); */
+    background: #0B5CAB;
+}
+
+h2{
+    font-weight: 600;
+    font-size: 2rem;
+}
+p{
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.agradecimento{
+    padding: 1rem 2rem;
+}
+
+.agrad{
+    background: rgba(255, 255, 255, 0.9);
+}
