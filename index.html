@@ -8,9 +8,9 @@
     <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
 
     <script src="https://www.google.com/recaptcha/api.js"></script>
-<script>
- function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
-</script>
+    <script>
+     function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
+    </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,9 +30,10 @@
       </div>
       <h1>Fale Conosco</h1>
     </div>
-    <input type=hidden name='captcha_settings' value='{"keyname":"Site","fallback":"true","orgId":"00DDC0000008vIr","ts":""}'>
+
+    <input type=hidden name='captcha_settings' value='{"keyname":"vendas_es","fallback":"true","orgId":"00DDC0000008vIr","ts":""}'>
     <input type=hidden name="oid" value="00DDC0000008vIr">
-    <input type=hidden name="retURL" value="http://exemplo.com">
+    <input type=hidden name="retURL" value="https://vendas-es.netlify.app/lead-criado/index.html">
 
       <!--  ----------------------------------------------------------------------  -->
       <!--  NOTA: Estes campos são elementos de depuração opcionais. Remova o       -->
@@ -62,7 +63,9 @@
       <div class="desc"><label for="description">Como podemos te ajudar?</label></div>
       <textarea name="description"></textarea>
     </div>
-    <div class="g-recaptcha" data-sitekey="6LcE3H4eAAAAABobQWTkheXbqJX4nmz3QRq4ESWj"></div><br>
+    <div class="captcha">
+      <div class="g-recaptcha" data-sitekey="6LfV_BgpAAAAAEPXG7V00Fn__3oP8C60uONVMTYN"></div><br>
+    </div>
     <div class="submit">
       <input type="submit" name="submit" />
       </div>
