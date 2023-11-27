@@ -3,37 +3,44 @@
   <head>
     <meta charset="UTF-8" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
 
     <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
 
-    <script src="https://www.google.com/recaptcha/api.js"></script>
-    <script>
-     function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
-    </script>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Fale conosco</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="icon" href="/img/LogoDreamXPmini.png" />
-
   </head>
   <body>
     <form
-    action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DDC0000008vIr" method="POST"
+      action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DDC0000008vIr"
+      method="POST"
     >
-    <div class="head">
-      <div class="img">
-        <img src="./img/LogoDreamXP.png" alt="">
+      <div class="head">
+        <div class="img">
+          <img src="./img/LogoDreamXP.png" alt="" />
+        </div>
+        <h1>PREENCHA O FORMULÁRIO PARA ENTRARMOS EM CONTATO</h1>
       </div>
-      <h1>Fale Conosco</h1>
-    </div>
 
-    <input type=hidden name='captcha_settings' value='{"keyname":"vendas_es","fallback":"true","orgId":"00DDC0000008vIr","ts":""}'>
-    <input type=hidden name="oid" value="00DDC0000008vIr">
-    <input type=hidden name="retURL" value="https://vendas-es.netlify.app/lead-criado/index.html">
+      <input type="hidden" name="oid" value="00DDC0000008vIr" />
+      <input
+        type="hidden"
+        name="retURL"
+        value="https://vendas-es.netlify.app/lead-criado/index.html"
+      />
+      
+      <!-- <input type="hidden" name="debug" value=1>
+      <input type="hidden" name="debugEmail" value="agustin.miola@dreamxp.com.br">  -->
 
       <!--  ----------------------------------------------------------------------  -->
       <!--  NOTA: Estes campos são elementos de depuração opcionais. Remova o       -->
@@ -42,34 +49,68 @@
       <!--  <input type="hidden" name="debugEmail"                                  -->
       <!--  value="eng.solucao@dreamxp.com.br">                                     -->
       <!--  ----------------------------------------------------------------------  -->
-        <div class="campos">
-      <div class="campo">
-        <label for="first_name">Nome</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" />
-    </div>
-    <div class="campo">
-      <label for="last_name">Sobrenome</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" />
-    </div>
-    <div class="campo">
-      <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" />
-    </div>
-    <div class="campo">
-      <label for="phone">Telefone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" />
-    </div>
-    <div class="campo">
-      <label for="company">Empresa</label><input  id="company" maxlength="40" name="company" size="20" type="text" />
-    </div>
-    
-    <div class="campo">
-      <div class="desc"><label for="description">Como podemos te ajudar?</label></div>
-      <textarea name="description"></textarea>
-    </div>
-    <div class="captcha">
-      <div class="g-recaptcha" data-sitekey="6LfV_BgpAAAAAEPXG7V00Fn__3oP8C60uONVMTYN"></div><br>
-    </div>
-    <div class="submit">
-      <input type="submit" name="submit" />
+      <div class="campos">
+        <div class="campo">
+          <label for="first_name">Nome</label
+          ><input
+            id="first_name"
+            maxlength="40"
+            name="first_name"
+            size="20"
+            type="text"
+          />
+        </div>
+        <div class="campo">
+          <label for="last_name">Sobrenome</label
+          ><input
+            id="last_name"
+            maxlength="80"
+            name="last_name"
+            size="20"
+            type="text"
+          />
+        </div>
+        <div class="campo">
+          <label for="email">Email</label
+          ><input
+            id="email"
+            maxlength="80"
+            name="email"
+            size="20"
+            type="text"
+          />
+        </div>
+        <div class="campo">
+          <label for="phone">Telefone</label
+          ><input
+            id="phone"
+            maxlength="40"
+            name="phone"
+            size="20"
+            type="text"
+          />
+        </div>
+        <div class="campo">
+          <label for="company">Empresa</label
+          ><input
+            id="company"
+            maxlength="40"
+            name="company"
+            size="20"
+            type="text"
+          />
+        </div>
+
+        <div class="campo">
+          <div class="desc">
+            <label for="description">Como podemos te ajudar?</label>
+          </div>
+          <textarea name="description"></textarea>
+        </div>
+        <div class="submit">
+          <input type="submit" name="submit" />
+        </div>
       </div>
-    </div>
     </form>
   </body>
 </html>
